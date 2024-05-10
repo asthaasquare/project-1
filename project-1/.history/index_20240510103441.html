@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      color: white;
+      margin: 0;
+      padding: 0;
+      background-image: url("img/1087639.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+
+    .header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .navbar {
+      margin-top: 20px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .navbar li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar li a:hover {
+      color: rgb(136, 177, 215);
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 2px solid grey;
+      border-radius: 20px;
+      margin: 50px auto;
+      padding: 30px;
+      width: 60%;
+      max-width: 600px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .btn {
+      color: white;
+      background-color: black;
+      border: 2px solid grey;
+      border-radius: 13px;
+      font-size: 18px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: grey;
+      border-color: black;
+    }
+
+    h1 {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="left">
+      <img src="img/logo.jpg" alt="Logo" class="logo" />
+    </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Fitness Calculator</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join The Best Gym Of Our Rajkot Now</h1>
+    <form action="noaction.php" class="form">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <input type="text" name="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <input type="text" name="phone" placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <input type="text" name="message" placeholder="Enter your message">
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

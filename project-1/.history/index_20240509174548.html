@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit World</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Jaro:opsz@6..72&family=Jersey+25+Charted&family=Oswald:wght@200..700&family=Poetsen+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      color: white;
+      margin: 0;
+      padding: 0;
+      background-image: url("img/1087639.jpg");
+      background-size: cover; /* This will make sure the image covers the entire background */
+      background-position: center; /* This will center the image within the container */
+      height: 100vh; /* This will set the height of the background to the viewport height */
+      font-family: "Roboto Condensed", sans-serif;
+      font-optical-sizing: auto;
+    }
+
+    .left {
+      /* border: 2px double rgb(75, 62, 62); */
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      left: 34px;
+      padding: 5px; /* Add some padding around the logo */
+    }
+
+    .left img {
+      width: 80px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .left div {
+      line-height: 0px;
+    }
+
+    .mid {
+      margin: 18px auto;
+      display: block;
+      width: 36%;
+      border: 2px double rgb(106, 137, 200);
+    }
+
+    .right {
+      position: absolute;
+      display: inline-block;
+      /* border: 2px double rgb(100, 96, 222); */
+      top: 0px;
+      right: 34px;
+    }
+
+    .navbar {
+      display: flex; /* Use flexbox for better alignment */
+      justify-content: space-between; /* Distribute items evenly across the container */
+      align-items: center; /* Center items vertically */
+      padding: 0;
+    }
+
+    .navbar li {
+      font-size: 15px;
+      list-style: none; /* Remove default list styles */
+      margin-right: 20px; /* Add some spacing between navbar items */
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: rgb(136, 177, 215);
+    }
+
+    .navbar li:last-child {
+      margin-right: 0; /* Remove margin from the last navbar item */
+    }
+
+    .header {
+      position: relative; /* Set position to relative to allow absolute positioning of ch
+      ild elements */
+    }
+
+    .container {
+      border: 2px solid grey;
+      margin: 73px 33px;
+      padding: 75px;
+      width: 26%;
+      background-image:url(img/bg1.jpg) ;
+      opacity: 50%;
+      z-index: -1;
+      height: 30px;
+      border-radius: 28px;
+      
+    }
+
+    .btn {
+      margin: 0px 0px;
+      color: white;
+      background-color: black;
+      position: relative;
+      right: 22px;
+      top: -15px;
+      left: 20px;
+      border: 2px solid grey;
+      border-radius: 13px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background-color 0.3s, border-color 0.3s;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+
+    .btn:hover {
+      background-color: grey; /* Change background color on hover */
+      border-color: black; /* Change border color on hover */
+    }
+
+    h1{
+      position: relative;
+      top:-50px;
+      color: black;
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="img/logo.jpg" alt="Logo" />
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Join The Best Gym Of Our Rajkot Now</h1>
+    </div>
+  </body>
+</html>

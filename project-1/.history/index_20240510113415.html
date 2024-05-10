@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fit World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Existing CSS styles */
+
+    /* New styles to enhance the visual appearance */
+    body {
+      background-color: #121212; /* Dark background color */
+    }
+
+    .header {
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for header */
+      padding: 20px 0; /* Add padding to header */
+    }
+
+    .navbar {
+      margin: 0; /* Remove default margin */
+    }
+
+    .navbar li {
+      margin-right: 20px;
+    }
+
+    .navbar li a {
+      color: white;
+      font-size: 18px; /* Increase font size */
+      text-transform: uppercase; /* Uppercase text */
+      transition: color 0.3s; /* Smooth color transition */
+    }
+
+    .navbar li a:hover {
+      color: rgb(136, 177, 215); /* Change color on hover */
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for container */
+      border: 2px solid rgba(255, 255, 255, 0.3); /* Transparent border */
+      border-radius: 15px; /* Rounded corners */
+      padding: 30px; /* Add padding */
+      margin: 50px auto; /* Center container */
+      max-width: 600px; /* Limit container width */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    }
+
+    h1 {
+      font-size: 28px; /* Increase font size */
+      text-align: center; /* Center align */
+      margin-bottom: 30px; /* Add spacing */
+    }
+
+    input[type="text"] {
+      width: 100%; /* Full width input */
+      padding: 10px; /* Increase padding */
+      margin-bottom: 20px; /* Add spacing between inputs */
+      font-size: 16px; /* Increase font size */
+      border: none; /* Remove border */
+      border-radius: 8px; /* Rounded corners */
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+      color: white; /* Text color */
+    }
+
+    .btn1 {
+      width: 100%; /* Full width button */
+      padding: 15px; /* Increase padding */
+      font-size: 18px; /* Increase font size */
+      background-color: black; /* Black background */
+      color: white; /* White text color */
+      border: none; /* Remove border */
+      border-radius: 8px; /* Rounded corners */
+      cursor: pointer;
+      transition: background-color 0.3s; /* Smooth color transition */
+    }
+
+    .btn1:hover {
+      background-color: #333; /* Darker background on hover */
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="left">
+      <img src="img/logo.jpg" alt="Logo" />
+    </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Fitness Calculator</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <button class="btn">Call Us Now</button>
+      <button class="btn">Email Us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join The Best Gym Of Our Rajkot Now</h1>
+    <form action="noaction.php" class="form">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Enter your name" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="email" placeholder="Enter your email" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="phone" placeholder="Enter your phone number" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="message" placeholder="Enter your message" />
+      </div>
+      <button type="submit" class="btn1">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
